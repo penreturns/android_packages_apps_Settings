@@ -123,6 +123,12 @@
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
 
+	<!-- A2D-MY version -->
+	<Preference android:key="a2d_version"
+         	style="?android:preferenceInformationStyle"
+         	android:title="@string/a2d_version"
+         	android:summary="@string/a2d_version_default" />
+
         <!-- Device firmware version -->
         <Preference android:key="firmware_version" 
                 style="?android:preferenceInformationStyle"
