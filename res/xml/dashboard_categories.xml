@@ -115,6 +115,14 @@
 		android:icon="@drawable/ic_settings_notifications"
 	 	/>
 
+	<!-- App Circle Bar -->
+	<dashboard-tile
+		android:id="@+id/a2d_app_circle_bar"
+		android:title="@string/app_circle_bar_title"
+		android:fragment="com.android.settings.a2d.AppCircleBar"
+		android:icon="@drawable/ic_settings_interface"
+	 	/>
+
     </dashboard-category>
 
     <!-- DEVICE -->
