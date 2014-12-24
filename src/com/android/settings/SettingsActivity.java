@@ -1218,12 +1218,23 @@ public class SettingsActivity extends Activity
                     if (!hasDeviceKeys) {
                         removeTile = true;
                     }
+
                 } else if (id == R.id.voice_wakeup_settings) {
                     if (!Utils.isPackageInstalled(this, VOICE_WAKEUP_PACKAGE_NAME)) {
                         removeTile = true;
                     }
                 } else if (id == R.id.performance_settings) {
                     if (!(pm.hasPowerProfiles() || (showDev && !Build.TYPE.equals("user")))) {
+
+                 } else if (id == R.id.viper_settings) {
+                    // Embedding into Settings only if app exists (user could manually remove it)
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.vipercn.viper4android_v2", 0).versionCode >= 18);
+                    } catch (PackageManager.NameNotFoundException e) {
+ 
+                    }
+                    if (!supported) {
                         removeTile = true;
                     }
                 }
