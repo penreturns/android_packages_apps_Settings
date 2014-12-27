@@ -113,6 +113,10 @@
     <string name="wakelock_blocker_warning_title">Proceed with caution</string>
     <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss.</string>
 
+    <!-- App Circle Bar -->
+    <string name="app_circle_bar_title">App circle bar</string>
+    <string name="app_circle_bar_style_title">Settings</string>
+
     <!-- App Circle sidebar -->
     <string name="category_app_circle_bar_title">App launcher</string>
     <string name="app_circle_bar_title">App circle bar</string>

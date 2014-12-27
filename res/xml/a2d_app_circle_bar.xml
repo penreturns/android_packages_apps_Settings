@@ -20,7 +20,7 @@
 	android:title="@string/app_circle_bar_title">
 
         <PreferenceCategory
-	    android:title="@string/network_traffic_style_title" >
+	    android:title="@string/app_circle_bar_style_title" >
 
 	<PreferenceScreen
 		android:key="app_circle_bar"
